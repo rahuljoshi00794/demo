@@ -1,0 +1,258 @@
+*{
+	box-sizing:border-box;
+	
+}
+.container-fluid{
+	width:99%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.row.banner ul{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+	background-color:#f6f6f6;
+}
+.row.banner ul li {
+   float: left;
+    padding: 4px;
+    margin: 4px 2px;
+}
+
+.row.banner ul li a{
+	font-size: 16px;
+	color: #6a6a6a;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+.row.banner ul li a:hover,.row.navigation ul li a:hover{
+opacity:0.7;
+cursor:pointer;
+}
+.row.navigation ul li img{
+	    max-height: 56px;
+		width:auto;
+		margin-top:-15px;
+}
+.row.navigation ul{
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+	padding:0;
+	margin:0;
+}
+.row.navigation ul.padded-left{
+padding-left:95px;
+}
+.row.navigation ul li {
+    float: left;
+    padding: 13px 4px 4px 4px;
+    margin: 4px 8px;
+}
+.row.navigation ul li a{
+	font-weight: 700;
+	font-size:14px;
+	color:black;
+	
+}
+
+.row.navigation .navigation-li {
+    position: relative;
+}
+.row.navigation .navigation-li ul {
+    display: none;
+    position: absolute;
+	top:35px;
+	background-color:white;
+	z-index:99;
+	width:200px;
+	box-shadow: 1px 1px 1px 1px #f5f5f5;
+    padding:40px 0 0 0;
+	
+}
+.row.navigation .navigation-li ul li{
+    position: relative;
+	clear:left;
+}
+ .row.navigation .navigation-li::after{
+	content:"\2228";
+	
+}
+ .row.navigation .navigation-li:hover::after{
+	content:"\2227";
+	
+}
+.row.navigation button{
+	color:white;
+	padding: 20px 30px;
+	margin-top:-15px;
+    font-size: 14px;
+    font-weight: 700;
+	background-color:#e20074;
+
+}
+.row.navigation button:hover{
+	background: #ba0060;
+
+}
+.row.navigation button::after{
+	content:" \2228";
+}
+.row.navigation .button-dropdown{
+    position: absolute;
+    top: 87px;
+    right: 35px;
+	background-color: white;
+    z-index: 99;
+	display:none;
+}
+.button-dropdown .login-button{
+	background-color: #e20074;
+    padding: 15px 64px;
+    color: white;
+    margin: 0 3px 20px 32px;
+}
+.button-dropdown .login-button:hover{
+	background-color: #ba0060;
+	
+   
+}
+
+
+.row.navigation .button-dropdown .login-button a{
+	color:white;
+}
+.row.navigation  .button-dropdown .login-button a:hover{
+	opacity:1;
+	text-decoration:none;
+}
+
+.row.navigation .button-dropdown .quick-action-menu ul{
+	top: 80px;
+	width: 200px;
+	background-color: #f8f8f8;
+}
+	
+.row.navigation .button-dropdown .quick-action-menu ul li {
+    clear: left;
+	
+}
+
+.row.middle-content img{
+	width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+.row.middle-content div.eyebrow{
+	font-size: 16px;
+	font-weight:700;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+}
+.row.middle-content h2.big-text{
+    font-size: 56px;
+    margin:20px 0  13px 0;
+	letter-spacing:-4.1px;
+	font-family: Tele-Grotesk-Ultra,sans-serif;
+	font-weight:700;
+    line-height: 1;
+}
+
+
+.row.image-gallery img {
+    height: 400px;
+    width: 650px;
+    margin: 9px;
+}
+.image-text {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 125px;
+	text-align:center;
+    color: white;
+    text-shadow: 1px 1px rebeccapurple, 1px 2px blue;
+}
+
+#top-scroll{
+	display:none;
+	position:fixed;
+	bottom:30px;
+	right:15px;
+    text-decoration: none;
+    color: white;
+    padding-left: 7px;
+    width: 31px;
+    border-radius: 5px;
+	z-index:99;
+    background: rgba(90,90,90,.7);
+}
+
+.footer {
+    padding: 38px 20px;
+    color: white;
+    font-size: 16px;
+	margin:10px 0;
+    line-height: 30px;
+    background-color: black;
+	
+}
+.footer ul{
+	list-style:none;
+}
+.footer h5{
+	font-weight: 700;
+    padding-left: 38px;
+    font-size: 17px;
+}
+.footer a ,a{
+	color:white;
+	cursor:pointer;
+	color:white;
+	
+}
+.footer a:hover{
+	color:white;
+}
+.footer img {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin: 0 5px;
+}
+.middle-content .button {
+    background-color:#e20074;
+    border: none;
+    color: white;
+    padding: 17px 19px;
+    font-weight: 700;
+	font-size:20px;
+    width: 183px;
+	transition:0.5s;
+}
+.button span {
+    position: relative;
+	transition:0.5s;
+}
+.button span::after{
+	content:'\00bb';
+	position:absolute;
+	 top:-px;
+	 right:-20px;
+	 opacity:0;
+	 transition:0.5s;
+}
+.button:hover span::after{
+	opacity:1;
+	right:0;
+	 
+}
+.button:hover{
+	background-color: #ba0060;
+}
+.button:hover span{
+	padding-right:23px;
+	
+}
